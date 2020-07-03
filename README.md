@@ -4,13 +4,13 @@ A Movie Management and Recommendation System ( as a part of DevSprint )
 
 List of features to be included:
 
-1.Searching for a movie
+      1.Searching for a movie
 
-2.Filtering movies according to a given criteria
+      2.Filtering movies according to a given criteria
 
-3.Details about all the movies
+      3.Details about all the movies
 
-4.Implement a rating system for movies
+      4.Implement a rating system for movies
 
 
 Judging Criteria
