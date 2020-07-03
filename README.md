@@ -16,17 +16,17 @@ List of features to be included:
 Judging Criteria
 
 
-Frontend: 
+  Frontend: 
 
-1.UI
+      1.UI
 
-2.Intuitiveness
+      2.Intuitiveness
 
-3.Ease of Access
+      3.Ease of Access
 
 
-Backend:
+  Backend:
 
-1.Efficiency
+      1.Efficiency
 
-2.Structure(schemes, routes, workflow)
+      2.Structure(schemes, routes, workflow)
