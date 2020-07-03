@@ -1,7 +1,6 @@
 # Movie-Recommendation
 A Movie Management and Recommendation System ( as a part of DevSprint )
 
-
 List of features to be included:
 
       1.Searching for a movie
@@ -15,7 +14,6 @@ List of features to be included:
 
 Judging Criteria
 
-
   Frontend: 
 
       1.UI
@@ -23,7 +21,6 @@ Judging Criteria
       2.Intuitiveness
 
       3.Ease of Access
-
 
   Backend:
 
