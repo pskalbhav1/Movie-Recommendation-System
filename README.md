@@ -29,7 +29,7 @@ Judging Criteria
       2.Structure(schemes, routes, workflow)
 
 
-Solution :
+# Solution :
 
    Have you ever wondered how Netflix recommends you movies to watch?  What is the idea upon which this recommendation is done?
    
@@ -43,17 +43,19 @@ Solution :
       
       3.Collaborative filtering based recommendation engine
       
-   Popularity based recommendation :
+   # Popularity based recommendation :
      
    A very good example of this is the "trending list" that you see on Netflix. It keeps a view count of the movies being watched and displays them in decreasing order of their view counts.
       
-   Content based recommendation:
+   # Content based recommendation:
    
    This type of recommendation systems, takes in a movie that a user currently likes as input. Then it analyzes the contents (rating , overview, genre, cast, director etc.) of the movie to find out other movies which have similar content. Then it ranks similar movies according to their similarity scores and recommends the most relevant movies to the user.
       
-   Collaborative filtering based recommendation:
+   # Collaborative filtering based recommendation:
    
    This algorithm at first tries to find similar users based on their activities and preferences.
+   
+  # Code : 
       
   Here, we have used content based recommendation to predict movies. A movie that the user likes is taken as input in webpage. Then its contents are analyzed from the available dataaset. We have made use of the contents - keywords, genre, cast and director from the given dataset.
   
