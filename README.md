@@ -148,3 +148,20 @@ Judging Criteria
         app.run()
         
 And yes, we are done with content based movie recommendation system using HTML, Flask and Python.
+
+# Trending List:
+
+  The trending list is created based on the viewer votes that are present in the dataset. The top 5 movie names will be displayed along with their genres. The list is created based on the decreasing order of the ratings and then the top 5 names are displayed. 
+  
+     def trending():
+         sim_scores=df1.groupby('title')['vote_average'].count().sort_values(ascending=False)
+         sim_scores = indices[all_titles] 
+         movie_indices = sim_scores[0:5]
+         tit = df1['title'].iloc[movie_indices]
+         genre = df1['genres'].iloc[movie_indices]
+         return_df = pd.DataFrame(columns=['title','genres'])
+         return_df['title'] = tit
+         return_df['genres'] = genre
+         return return_df
+         
+ This output gets displayed on the webpage and the same is done using flask, as available in the code.
