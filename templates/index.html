@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:300,500&amp;display=swap'>
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <style>
 html {
   box-sizing: border-box;
@@ -462,6 +463,13 @@ figure {
             margin-top: 12vh;
             margin-bottom: 12vh;
         }
+	table,tr,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    td{
+      padding: 10px;  
+    }
 }
 </style>
 </head>
@@ -476,6 +484,7 @@ figure {
   </div>
 </div>
 
+<!-- Menu -->
 <!-- Menu -->
 <div class="menu">
   <div class="menu__container bg-white">
@@ -516,16 +525,13 @@ figure {
             <input type="text" id="movie_name" name="movie_name" placeholder="Enter a full movie name" required />
             <input type="submit" id="submission_button" value="Submit"/>
         </form>
-      <h2><u>Trending List:</u></h2>
+        <h2><u>Trending List:</u></h2>
         <table class="movie_table" align="center">
             <tr>
                 <th>Movie Title</th>
-                <th>OverView</th>
-                <th>Director</th>
-                <th>Cast</th>
-                <th>Rating</th>
+                
                 <th>Genre</th>
-                <th>Links</th>
+               
             </tr>
             <tbody class="table_body">
                 <tr>
@@ -557,26 +563,7 @@ figure {
                     
                     <td>{{ movie_links[5] }}</td>
                 </tr>
-                <tr>
-                    <td>{{ movie_names[6] }}</td>
-                   
-                    <td>{{ movie_links[6] }}</td>
-                </tr>
-                <tr>
-                    <td>{{ movie_names[7] }}</td>
-                    
-                    <td>{{ movie_links[7] }}</td>
-                </tr>
-                <tr>
-                    <td>{{ movie_names[8] }}</td>
-            
-                    <td>{{ movie_links[8] }}</td>
-                </tr>
-                <tr>
-                    <td>{{ movie_names[9] }}</td>
-                 
-                    <td>{{ movie_links[9] }}</td>
-                </tr>
+                
             </tbody>
         </table>
         <br>
