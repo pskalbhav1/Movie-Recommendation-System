@@ -6,7 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 <style>
-
+ .movie{
+        height: 70vh;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        display: block;
+        background-color: white;
+        border-radius: 20px;
+        padding: 1em;
+        width: auto;
+        box-shadow: 0px 0px 10px -4px grey;
+        text-align: center;
+    }
+    #movie_name{
+        width: 70%;
+        padding: 1em;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid grey;
+    }
+    #submission_button{
+        width: 25%;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        color: white;
+        background-color:dodgerblue;
+        border-style: none;
+    }
+    @media screen and (max-width:600px) {
+        .movie{
+            margin-top: 12vh;
+            margin-bottom: 12vh;
+        }
 *
 {
   font-family: 'PT Sans Caption', sans-serif, 'arial', 'Times New Roman';
@@ -293,9 +327,78 @@
                         <p>Please try Again!</p>
                         <span id="suggestions"></span>
                     </div>
+                  
                     <a class="button" onClick="goBack()"><i class="fas fa-home"></i> Go Back to Home Page &amp; Try Again.</a>
                 </div>
-            </div>
+           </div>
+   <div class="movie">
+  <h2><u>Trending List:</u></h2>
+        <table class="movie_table" align="center">
+            <tr>
+                <th>Movie Title</th>
+                <th>OverView</th>
+                <th>Director</th>
+                <th>Cast</th>
+                <th>Rating</th>
+                <th>Genre</th>
+                <th>Links</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_names[0] }}</td>
+                    <td>{{ movie_links[0] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[1] }}</td>
+                    
+                    <td>{{ movie_links[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[2] }}</td>
+                    
+                    <td>{{ movie_links[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[3] }}</td>
+                   
+                    <td>{{ movie_links[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[4] }}</td>
+                    
+                    <td>{{ movie_links[4] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[5] }}</td>
+                    
+                    <td>{{ movie_links[5] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[6] }}</td>
+                   
+                    <td>{{ movie_links[6] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[7] }}</td>
+                    
+                    <td>{{ movie_links[7] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[8] }}</td>
+            
+                    <td>{{ movie_links[8] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[9] }}</td>
+                 
+                    <td>{{ movie_links[9] }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </div>
+        
 </body>
 <script>
 function goBack() {
